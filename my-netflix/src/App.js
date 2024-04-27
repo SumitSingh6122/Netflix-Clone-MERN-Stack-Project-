@@ -7,14 +7,14 @@ import Browse from "./components/browse";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/body" element={<Body />} />
-        <Route path="/browse" element={<Browse/>}/>
-      </Routes>
-      <Toaster />
-    </Router>
+    <Router basename={process.env.PUBLIC_URL}>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/body" element={<Body />} />
+      <Route path="/browse" element={<Browse />} />
+    </Routes>
+    <Toaster />
+  </Router>
   );
 }
 
