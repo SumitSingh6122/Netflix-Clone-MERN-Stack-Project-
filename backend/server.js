@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.json());
 app.use(cookieParser());
 const corsOption={
-    origin:'https://netflix-clone-mern-stack.netlify.app/',
+    
     credentials:true
 }
 app.use(cors(corsOption));
